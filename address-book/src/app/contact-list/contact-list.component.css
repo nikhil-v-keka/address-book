@@ -1,0 +1,44 @@
+p{
+    margin: 0px;
+    padding: 0px;
+}
+.country-code{
+    margin-right: 10px;
+}
+
+.contact-list{
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+.contacts-page{
+    display: flex;
+}
+.contact-details{
+    margin: 50px 100px;   
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.contact-item{
+    word-spacing: 5px;
+    width: 400px;
+    border: 2px solid rgb(221, 221, 221);
+    padding: 5px 12px;
+}
+
+.contact-name{
+    margin: 0px;
+    font-size: 26px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.text-wrap{
+    word-wrap: break-word;
+}
+
+.highlight{
+    background-color: rgb(206, 231, 242);
+}

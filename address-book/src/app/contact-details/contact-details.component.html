@@ -1,0 +1,20 @@
+<div *ngIf="contact!=undefined" class="contact-details">
+    <div class="contact-details-header">
+        <div id="display-contact-name" class="text-wrap">{{contact.name}}</div>
+        <div class="options">
+            
+            
+            <a href="" routerLink="/edit/{{contact.id}}"><span id="EditButton" class="cursor-pointer"><img src="../assets/Edit-icon.png">Edit</span></a>
+            <span id="DeleteButton" class="cursor-pointer" (click)="deleteContact()"><img src="../assets/delete1.png">Delete</span>
+        </div>
+    </div>
+    <div class="details">
+        <p class="mb-20">Email: <span id="display-email">{{contact.email}}</span></p>
+        <p>Mobile: <span id="display-mobile-number">+91 {{contact.mobilenumber}}</span></p>
+        <p class="mb-20">Landline: <span id="display-landline">{{contact.landline}}</span></p>
+        <p class="mb-20">website: <span id="display-website">{{contact.website}} </span></p>
+        <div id="AddressDiv">
+            <p>Address: </p><span id="display-address">{{contact.address}}</span>
+        </div>
+    </div>
+</div>

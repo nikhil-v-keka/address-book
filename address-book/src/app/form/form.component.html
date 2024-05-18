@@ -1,0 +1,44 @@
+<!-- 
+    use hide
+ -->
+ <div class="contact-form">
+    <div class="close-icon" (click)="closeForm()">
+        <i class="fas fa-xmark"></i>
+    </div>
+    <form action="" [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+        <label for="ContactName">Name:  <sup class="error" *ngIf="!reactiveForm.get('name').dirty">*</sup> </label>
+        <input type="text" name="ContactName" id="ContactName" formControlName="name">
+      
+        <p id="NameError" class="error" *ngIf="reactiveForm.get('name')?.errors?.['required'] && reactiveForm.get('name').dirty" >Name is required</p>
+        <label for="ContactMail">Email:   <sup class="error" *ngIf="!reactiveForm.get('email').dirty">*</sup></label>
+        <input type="email" name="ContactMail" id="ContactMail" formControlName="email" >
+        <p id="MailError" class="error" *ngIf="reactiveForm.get('email')?.errors?.['required']  && reactiveForm.get('email').dirty">Email is required</p>
+        <p id="MailError" class="error" *ngIf="reactiveForm.get('email')?.errors?.['email']">Email is invalid</p>
+
+        <div class="contact-number-details">
+            <div class="contact-numbers">
+                <label for="ContactMobile">Mobile:   <sup class="error" *ngIf="!reactiveForm.get('mobilenumber').dirty">*</sup></label>
+                <input type="number" name="ContactMobile" id="ContactMobile" formControlName="mobilenumber">
+                
+                <p id="MobileError" class="error" *ngIf="reactiveForm.get('mobilenumber')?.errors?.['required'] && reactiveForm.get('mobilenumber').dirty">Mobile number is required</p>
+                <p id="MobileError" class="error" *ngIf="reactiveForm.get('mobilenumber')?.errors?.['pattern']">Mobile number is invalid</p>
+
+            </div>
+
+            <div class="contact-numbers">
+                <label for="ContactLandline">Landline:</label>
+                <input type="number" name="ContactLandline" id="ContactLandline" formControlName="landline">
+            </div>
+        </div>
+
+        <label for="ContactWebsite">Website:</label>
+        <input type="url" name="ContactWebsite" id="ContactWebsite" formControlName="website">
+
+
+        <label for="ContactAddress">Address:</label>
+
+        <textarea name="ContactAddress" id="ContactAddress" cols="30" rows="10" formControlName="address"></textarea>
+        <button    [ngClass]= "{'disable':reactiveForm.invalid}" [disabled]="reactiveForm.invalid">{{value}}</button>
+        <ng-template #required class="error"></ng-template>
+    </form>
+</div>

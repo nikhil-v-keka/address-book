@@ -1,0 +1,19 @@
+.contacts-section{
+    margin: 20px;
+    width: 400px;
+}
+
+#contact-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.contacts-container{
+    display: flex;
+}
+
+.contact-details{
+    margin: 50px 100px;
+    width: 500px;
+}

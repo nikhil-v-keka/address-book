@@ -1,0 +1,43 @@
+
+.navigation{
+    color: #fff;
+    background-color: #333333;
+    padding: 0px;
+ }
+ 
+ .nav-items{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    padding-left: 6px;
+    justify-content: space-between;
+    height: 28px;
+ }
+ 
+ .nav-items div{
+    display: flex;
+ }
+ 
+ .nav-item {
+    list-style: none;
+    margin: 5.5px 14px;
+    font-size: 12.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+ }
+ 
+ .nav-item a{
+     text-decoration: none;
+     color: #fff;
+ }
+  .blog-img img{
+    height: 20px;  
+    width: 20px;
+ }
+/* .nac-item:last-child{
+   height: 18px;  
+    width: 18px;
+} */
+ .active{
+     background-color: orange;
+ }

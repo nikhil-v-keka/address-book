@@ -1,0 +1,19 @@
+
+    <div class="contact-list">
+        <div class="contact-item cursor-pointer" *ngFor= "let contact of contacts" [class.highlight]="contact.id == id"
+         (click)="updateSelectedContact(contact.id)"
+          >
+          
+            <a routerLink="/details/{{contact.id}}"  >
+                <p class="contact-name text-wrap">{{contact.name}}</p>
+                <p class="contact-email">{{contact.email}}</p>
+                <p class="contact-phone">
+                    <span class="country-code">+91</span>
+                    <span class="phone-number">{{contact.mobilenumber}}</span>
+                </p>
+            </a>
+        </div>
+    </div>
+    
+ <!-- [ngClass]="{'highlight': contact==selectedContact}"
+          routerLinkActive="highlight"     -->

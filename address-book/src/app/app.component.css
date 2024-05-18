@@ -1,0 +1,14 @@
+
+.page-title{
+    font-size: 40px;
+    padding: 17.5px;
+    text-transform: capitalize;
+    background-color: #3399cc;
+    font-family: Century Gothic
+    }
+    
+    .page-title span{
+        text-transform: capitalize;
+        color: #fff;
+       font-weight: 300;
+    }

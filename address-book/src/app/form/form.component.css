@@ -1,0 +1,89 @@
+
+.contact-form label{
+    display:flex;
+    /* flex-direction:column; */
+    font-size: 12px;
+    font-weight: 500;    
+}
+form{
+    padding: 30px 20px 20px 20px;
+}
+.contact-numbers{
+    
+    display: flex;
+  flex-direction: column;
+  margin-right: 10px
+}
+
+.contact-number-details{
+    
+    display: flex;
+    flex-direction: row;
+}
+.contact-number-details input{
+    width: 180px;
+}
+
+.contact-form input,textarea,button{
+    width: 420px;
+    height: 30px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    
+}
+.contact-form p{
+    margin-top: -10px;
+}
+.contact-number-details input{
+    width: 200px;
+}
+
+#ContactAddress{
+    height: 90px;
+    padding: 0px;
+}
+
+textarea{
+ resize: none;
+}
+
+.close-icon{
+    float: right;
+    width: 20px;
+    height: 30px;
+    padding: 10px 5px;
+}
+
+.contact-form{
+    width: 600px;
+    margin: 10px auto;
+    -webkit-box-shadow: -1px 1px 5px 9px rgba(0,0,0,0.2);
+    -moz-box-shadow: -1px 1px 5px 9px rgba(0,0,0,0.2);
+    box-shadow: -1px 1px 5px 9px rgba(0,0,0,0.2);
+}
+
+button{
+    background-color: rgb(70, 140, 0);
+    color: #fff;
+    width: 90px;
+    position: relative;
+    top: 20px;
+    /* left: 75%; */
+    border: none;
+    font-weight: 200;
+}
+
+.error{
+    font-size: 10px;
+    color: red;
+}
+
+input[type=text]:focus {outline:none;}
+input.ng-invalid.ng-touched{
+    border: red 1px solid;
+}
+
+.disable{
+    background-color: rgb(168, 168, 168);
+}

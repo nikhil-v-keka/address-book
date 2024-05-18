@@ -1,0 +1,31 @@
+{
+    "contacts": [
+      {
+        "name": "Nikhil Vegulla",
+        "email": "nikhil.v@keka.com",
+        "mobilenumber": 9133779271,
+        "landline": "",
+        "website": "",
+        "address": "",
+        "id": 1
+      },
+      {
+        "name": "pranjal M",
+        "email": "pranjal.m@keka.com",
+        "mobilenumber": 9187234251,
+        "landline": "",
+        "website": "",
+        "address": "",
+        "id": 2
+      },
+      {
+        "name": "Sahil Shaik",
+        "email": "sahil.s@keka.com",
+        "mobilenumber": 3456780987,
+        "landline": "",
+        "website": "",
+        "address": "",
+        "id": 3
+      }
+    ]
+  }

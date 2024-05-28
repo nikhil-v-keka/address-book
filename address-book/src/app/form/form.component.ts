@@ -1,8 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ContactService } from '../contact.service';
 import { FormControl,FormGroup,Validators } from '@angular/forms';
-import { Contact } from '../contact';
+
+import { ContactService } from '../contact.service';
+import { Contact } from '../models/contact.model';
 // import { Location } from '@angular/common';
 @Component({
   selector: 'app-form',

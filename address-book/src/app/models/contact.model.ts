@@ -8,4 +8,3 @@ export interface Contact{
     website:string;
     address:string;
 }
-

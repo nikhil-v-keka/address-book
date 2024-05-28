@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 import { BehaviorSubject, Observable } from 'rxjs';
 
-import { Contact } from './contact';
+import { Contact } from './models/contact.model';
 import { environment } from '../environments/environment.development';
 
 
@@ -12,7 +12,7 @@ import { environment } from '../environments/environment.development';
 })
 export class ContactService {
   constructor(private http:HttpClient) {
-    this.fetchContacts();
+    // this.fetchContacts();
   }
   private apiUrl=environment.apiUrl;
   public updateSubject=new BehaviorSubject<Contact[]>([]);
